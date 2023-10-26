@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background: linear-gradient(90deg, #fdfef5 50%, #fff 50%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.logo,
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: transparent;
+  max-width: 100%; /* Ensures the width doesn't exceed its container */
+  height: auto;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-message h1,
+.welcome-message p {
+  color: #000000; /* adjust as needed */
+}
+
+.logo img {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 700px; 
+  margin: 0 auto;
+}
+
+.form-container > h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.form-control > label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control > input {
+  padding: 15px;
+  border: 1px solid #adadad;
+  border-radius: 9px;
+  font-size: 1rem;
+}
+
+.form-control > input:focus {
+  border-color: #ffffff;
+  box-shadow: none; /* Add this line if you also want to remove the shadow when input is in focus */
+}
+
+.invalid-feedback {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+
+.invalid-feedback > p {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #ad3113;
+  cursor: pointer;
+}
+
+.invalid-feedback > p:hover {
+  color: #dd3d15;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  background: #e48700;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  max-width: 400px;
+}
+
+.text-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.text-dark > a {
+  text-decoration: none;
+  color: #b87514;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-links img {
+  width: 75px;
+  height: 75px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .form-container > h1 {
+    font-size: 2rem;
+  }
+
+  .form-control > label,
+  .form-control > input {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+.password-verify-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.password-checkmark {
+  margin-left: 10px; /* Adjust as needed */
+  color: green; /* Adjust as needed */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-links a {
+  color: #333; /* adjust color as needed */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-link {
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 75px auto;
+  border: 1px solid #04132e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  height: 65%;
+  width: 65%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-container hr {
+  width: 80%;
+  margin: 10px auto;
+}
