@@ -22,19 +22,19 @@ CORS(app)
 
 # Firebase credentials and initialization
 cred = credentials.Certificate(
-    "./pickmeup-e5862-firebase-adminsdk-kxi4z-48276b190a.json")
+    "")
 firebase_admin.initialize_app(cred)
 
 # Firestore database instance
 db = firestore.client()
 
 # Twilio configuration
-account_sid = 'AC94e5cae37969a23c8ac6e359f7aeb6fa'
-auth_token = 'b1a9226f1e1d9201a5ade5a6f4ca4b03'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 
 # OpenAI configuration
-openai.api_key = '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'
+openai.api_key = ''
 
 
 def ask_about_day():
