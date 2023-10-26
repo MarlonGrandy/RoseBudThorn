@@ -11,7 +11,7 @@ With the weekly summary feature, users can:
 - Nurture their 'Buds' or opportunities
 - Address the 'Thorns' or challenges
 
-Our unique textbot not only prompts users to move forward but also to reflect on their journey, ensuring every aspect is cherished.
+This textbot not only prompts users to move forward but also to reflect on their journey, ensuring every aspect is cherished.
 
 
 ## Getting Started
@@ -57,30 +57,25 @@ npm start
 cd path_to_backend_directory
 ```
 
-2. Install required backend dependencies. These might be listed in a `requirements.txt` file:
-```
-pip install -r requirements.txt
-```
-
-3. Run the Flask server:
+2. Run the Flask server:
 ```
 python app.py
 ```
 
-4. To connect the local server to the internet (so it can interact with Twilio), you need to use `ngrok`. In a new terminal, run:
+3. To connect the local server to the internet (so it can interact with Twilio), you need to use `ngrok`. In a new terminal, run:
 ```
 ngrok http 5000
 ```
 
 Note: Ensure you have `ngrok` installed. If not, download it from [here](https://ngrok.com/download).
 
-5. Copy the HTTPS URL provided by `ngrok` and configure it in your Twilio account for incoming webhooks.
+4. Copy the HTTPS URL provided by `ngrok` and configure it in your Twilio account for incoming webhooks.
 
 **Important:** You will need a Twilio account to handle text messaging. Make sure to configure your webhook in Twilio to point to the HTTPS link provided by `ngrok`.
 
 ## Contributing
 
-This project is still a work in progress. We appreciate any feedback, issues, or pull requests from the community. Let's work together to make RoseBudThorn even better!
+This project is still a work in progress. I appreciate any feedback, issues, or pull requests from the community. Let's work together to make RoseBudThorn even better!
 
 ## License
 
